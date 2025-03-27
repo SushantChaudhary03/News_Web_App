@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Navbar from './Components/Navbar'
 import About from './Components/About'
+import Login from './Components/Login'
+import Register from './Components/Register'
 import Service from './Components/Service'
 import News from './Components/News'
 import LoadingBar from 'react-top-loading-bar'
@@ -26,6 +28,8 @@ const App = () => {
         />
         <Routes>
           <Route exet path="/about" element={<About/>} />
+          <Route exet path="/login" element={<Login/>} />
+          <Route exet path="/register" element={<Register/>} />
           <Route exet path="/service" element={<Service/>} />
           <Route exet path="/" element={<News setProgress={setProgress} key="all" apiKey={apiKey} pageSize={pageSize} country="in" category="" />} />
           <Route exet path="/business" element={<News setProgress={setProgress} key="business" apiKey={apiKey} pageSize={pageSize} country="in" category="business" />} />
